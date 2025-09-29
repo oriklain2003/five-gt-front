@@ -324,7 +324,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                   <div style={{ width: '100%' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                       <Text strong>
-                        Point {index + 1} {index === 0 && '(End)'} {index === points.length - 1 && '(Start)'}
+                        Point {index + 1} {index === 0 && '(Start)'} {index === points.length - 1 && '(End)'}
                       </Text>
                     </div>
                     
