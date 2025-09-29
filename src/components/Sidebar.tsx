@@ -106,7 +106,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 
   const sortedPoints = [...points].sort(
     (a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()
-  ).reverse();
+  );
 
   const getModeIcon = (currentMode: AppMode) => {
     return currentMode === 'training' ? <ExperimentOutlined /> : <PlayCircleOutlined />;
