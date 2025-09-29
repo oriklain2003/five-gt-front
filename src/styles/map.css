@@ -1,0 +1,69 @@
+/* Map and Leaflet specific styles */
+
+/* Map styles - inspired by the provided image */
+.leaflet-container {
+  background-color: #2d3748 !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.map-tiles {
+  filter: grayscale(60%) brightness(0.8) contrast(1.2);
+}
+
+.leaflet-interactive {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Improve marker dragging performance */
+.leaflet-marker-draggable {
+  cursor: move;
+  transition: none !important; /* Disable transitions during drag */
+}
+
+.leaflet-marker-draggable:hover {
+  transform: scale(1.05);
+  z-index: 1000;
+}
+
+/* Disable pointer events on map during marker drag */
+.leaflet-container.leaflet-drag-target {
+  cursor: move !important;
+}
+
+/* Improve marker icon performance */
+.leaflet-marker-icon {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* Dark mode map styling */
+.dark-mode .leaflet-container {
+  background-color: #1a1a1a !important;
+}
+
+.dark-mode .map-tiles {
+  filter: brightness(0.6) contrast(1.2);
+  opacity: 0.8;
+}
+
+/* Dark mode leaflet controls */
+.dark-mode .leaflet-control-zoom a {
+  background-color: #333333 !important;
+  color: white !important;
+  border: 1px solid #555555 !important;
+}
+
+.dark-mode .leaflet-control-zoom a:hover {
+  background-color: #555555 !important;
+}
+
+.dark-mode .leaflet-control-attribution {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+}

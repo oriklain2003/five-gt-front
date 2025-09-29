@@ -1,0 +1,56 @@
+/* Sidebar and layout styles */
+
+/* Sidebar scrollbar styling */
+.ant-layout-sider::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ant-layout-sider::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.ant-layout-sider::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.ant-layout-sider::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Sidebar animation improvements */
+.ant-layout-sider {
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Toggle button hover effect */
+.ant-btn-primary:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+/* Point card hover effects */
+.point-card-highlighted {
+  background-color: #e6f7ff !important;
+  border: 1px solid #1890ff !important;
+  transform: scale(1.02) !important;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.2) !important;
+}
+
+/* Dark mode sidebar styles */
+.dark-mode .ant-layout-sider {
+  background: #000000 !important;
+  border-right: 1px solid #333333 !important;
+}
+
+/* Dark mode highlighted point cards */
+.dark-mode .point-card-highlighted {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid white !important;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2) !important;
+}
+
+.dark-mode .ant-slider{
+    border-radius: 3px !important;
+    background-color: #a2beca94 !important;
+}

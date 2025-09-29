@@ -1,0 +1,11 @@
+/* Main stylesheet that imports all other stylesheets */
+
+/* Import all style modules */
+@import './base.css';
+@import './map.css';
+@import './sidebar.css';
+@import './components.css';
+@import './animations.css';
+@import './antd-overrides.css';
+@import './switches.css';
+@import './responsive.css';

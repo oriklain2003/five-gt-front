@@ -1,0 +1,45 @@
+/* Component-specific styles */
+
+/* Settings panel styling */
+.settings-panel {
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.settings-panel:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2) !important;
+}
+
+.settings-header {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.settings-header:hover {
+  background-color: rgba(24, 144, 255, 0.05);
+  border-radius: 6px;
+}
+
+/* Settings panel slide animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode settings panel */
+.dark-mode .settings-panel {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.dark-mode .settings-panel:hover {
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1) !important;
+}

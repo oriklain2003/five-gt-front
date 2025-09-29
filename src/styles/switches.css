@@ -1,0 +1,51 @@
+/* Switch component styling for light and dark modes */
+
+/* Dark mode switch styling - completely override Ant Design defaults */
+.dark-mode .ant-switch {
+  background-color: #434343 !important;
+  border: 1px solid #474b4e !important;
+  opacity: 1 !important;
+}
+
+.dark-mode .ant-switch-checked {
+  background-color: #1890ff !important; /* Blue when checked */
+  border: 1px solid #474b4e !important;
+}
+
+.dark-mode .ant-switch::after {
+  background-color: rgb(190, 190, 190) !important;
+  border-radius: 50% !important; /* Ensure circular handle */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dark-mode .ant-switch-checked::after {
+  background-color: white !important;
+}
+
+.dark-mode .ant-switch-handle {
+  background-color: white !important;
+  border-radius: 50% !important; /* Ensure circular handle */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dark-mode .ant-switch-handle::before {
+  border-radius: 50% !important; /* Ensure circular handle */
+  background-color: white !important;
+}
+
+/* Specific colored switches for dark mode */
+.dark-mode .dark-switch-yellow.ant-switch-checked {
+  background-color: #faad14 !important; /* Yellow for dark mode toggle */
+}
+
+.dark-mode .dark-switch-blue.ant-switch-checked {
+  background-color: #1890ff !important; /* Blue for auto zoom */
+}
+
+.dark-mode .dark-switch-green.ant-switch-checked {
+  background-color: #52c41a !important; /* Green for jump to point */
+}
+
+.dark-mode .dark-switch-purple.ant-switch-checked {
+  background-color: #722ed1 !important; /* Purple for auto increment time */
+}

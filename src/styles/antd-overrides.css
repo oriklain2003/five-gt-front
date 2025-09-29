@@ -1,0 +1,66 @@
+/* Ant Design component overrides */
+
+/* Dark mode for Ant Design components */
+.dark-mode .ant-card {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+
+.dark-mode .ant-typography {
+  color: white !important;
+}
+
+.dark-mode .ant-list-item {
+  border-bottom: 1px solid #333333 !important;
+  color: white !important;
+}
+
+.dark-mode .ant-btn {
+  background: #333333 !important;
+  border: 1px solid #555555 !important;
+  color: white !important;
+}
+
+.dark-mode .ant-btn:hover {
+  background: #555555 !important;
+  border: 1px solid #777777 !important;
+}
+
+.dark-mode .ant-btn-primary {
+  background: white !important;
+  border: 1px solid white !important;
+  color: #000000 !important;
+}
+
+.dark-mode .ant-btn-primary:hover {
+  background: #f0f0f0 !important;
+  border: 1px solid #f0f0f0 !important;
+}
+
+.dark-mode .ant-select {
+  background: #333333 !important;
+  border: 1px solid #555555 !important;
+}
+
+.dark-mode .ant-select-selector {
+  background: #333333 !important;
+  border: 1px solid #555555 !important;
+  color: white !important;
+}
+
+.dark-mode .ant-select-arrow {
+  color: white !important;
+}
+
+.dark-mode .ant-input-number {
+  background: #333333 !important;
+  border: 1px solid #555555 !important;
+  color: white !important;
+}
+
+.dark-mode .ant-picker {
+  background: #333333 !important;
+  border: 1px solid #555555 !important;
+  color: white !important;
+}
